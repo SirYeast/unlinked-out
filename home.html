@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UnlinkedOut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/style/home.css">
+    <script src="assets/script/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <a href="home.html">
+                    <span class="first">Unlinked</span><span class="last">Out</span>
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Connections</a></li>
+                    <li><a href="#">Interest</a></li>
+                    <li><a href="#">Messages</a></li>
+                </ul>
+            </nav>
+            <a href="#"><img class="avatar" src="assets/img/profilepicture.jpg"></a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="home-profile" class="panel">
+                <button id="profile-edit-btn"><i class="fa-solid fa-pencil"></i></button>
+                <div>
+                    <img class="avatar" src="assets/img/profilepicture.jpg">
+                    <h2>Maksym Korzhan</h2>
+                    <h3>Software Developer</h3>
+                    <p>Currently studying software development at MITT</p>
+                </div>
+                <div id="profile-statistics">
+                    <div>
+                        <span class="stat">3.3M</span>
+                        <h3>Connections</h3>
+                    </div>
+                    <div>
+                        <span class="stat">2B</span>
+                        <h3>Followers</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="home-feed">
+                <form class="panel">
+                    <input type="text" placeholder="Write here. Add images or a video for visual impact.">
+                    <div id="post-buttons">
+                        <div id="post-content-btns">
+                            <button><i class="fa-solid fa-newspaper"></i> Article</button>
+                            <button><i class="fa-solid fa-image"></i> Image</button>
+                            <button><i class="fa-solid fa-video"></i> Video</button>
+                        </div>
+                        <button id="post-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </form>
+                <div id="posts">
+                    <article class="panel">
+                        <div class="heading">
+                            <img src="assets/img/profilepicture.jpg" class="avatar">
+                            <div class="heading-user">
+                                <h2>Maksym Korzhan</h2>
+                                <h3>Software Developer</h3>
+                            </div>
+                            <div class="heading-right">
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                                <div>1d ago</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Hey guys, how's it going?</p>
+                        </div>
+                    </article>
+                    <article class="panel">
+                        <div class="heading">
+                            <img src="assets/img/jeffrey.jpg" class="avatar">
+                            <div class="heading-user">
+                                <h2>Jeffrey Albertson</h2>
+                                <h3>Prison Enthusiast</h3>
+                            </div>
+                            <div class="heading-right">
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                                <div>4d ago</div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Good evening people of the internet, I just got out of prison!</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div id="home-people" class="panel">
+                <h2>People you may know</h2>
+                <ul id="people-list"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span>UnlinkedOut &copy; 2022</span>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+@import "reset.css";
+
+main {
+    min-height: calc(100vh - 60px);
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.container {
+    width: min(100% - 30px, 960px);
+    height: 100%;
+    margin-inline: auto;
+}
+
+.panel {
+    background-color: #2a2e3d;
+    border-radius: 10px;
+}
+
+a.active {
+    color: #186dff;
+    font-weight: 600;
+}
+
+header {
+    height: 60px;
+    border-bottom: 1px solid rgb(255 255 255 / 0.2);
+    background-color: #14273e;
+}
+
+header .container, footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+main {
+    padding: 40px;
+}
+
+main .container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+main .container > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#home-profile {
+    position: relative;
+    height: min-content;
+    text-align: center;
+}
+
+#profile-edit-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#home-profile .avatar {
+    width: 100px;
+    height: 100px;
+}
+
+h3, #profile-profession {
+    color: #bfbfbf;
+    font-size: 12px;
+}
+
+#home-profile p {
+    margin-top: 20px;
+}
+
+#profile-statistics {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+#home-profile, #home-people {
+    flex: 1;
+    padding: 20px;
+}
+
+#home-feed {
+    flex: 2;
+}
+
+form, article {
+    width: 100%;
+    padding: 20px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form button {
+    height: 100%;
+}
+
+#post-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#post-content-btns {
+    display: flex;
+    gap: 10px;
+    color: #a0a0a0;
+}
+
+#post-send-btn {
+    color: #306da9;
+}
+
+#posts {
+    width: 100%;
+}
+
+#posts article+article {
+    margin-top: 20px;
+}
+
+article .heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+article .heading-user {
+    margin-left: 10px;
+}
+
+article .heading-right {
+    margin-left: auto;
+    text-align: right;
+}
+
+#people-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+#people-list li {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+#people-list li img {
+    width: 60px;
+    height: 60px;
+}
+
+#people-list li div {
+    margin-left: 10px;
+}
+
+#people-list li button {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: #152d46;
+    color: #306da9;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+    background-color: #2a2a2a;
+}
