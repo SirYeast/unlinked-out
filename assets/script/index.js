@@ -49,7 +49,7 @@ loginBtn.addEventListener("click", () => {
     }
 
     if (email === localStorage.getItem("email") && password === localStorage.getItem("password")) {
-        window.location.assign("./home.html");
+        window.location.assign("/unlinked-out/home.html");
         return;
     }
 
